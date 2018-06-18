@@ -152,7 +152,7 @@ def shoe_size(player)
         end
     end
 end
-return new_array[0].to_i
+return new_array[0]
 end
 
 def team_colors(team)
