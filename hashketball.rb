@@ -182,7 +182,7 @@ def player_numbers(player)
         if attribute == :players
           values.each do |person, data|
             data.each do |i, j|
-              if person == player && i == :points
+              if person == player && i == :number
                 new_array << j
               end
             end
