@@ -189,7 +189,11 @@ def player_numbers(team_name)
 end
 
 def player_stats(player)
-  game_hash[]
+  game_hash.keys.each do |team|
+     if game_hash[team][:players].keys.includes?(player)
+       return game_hash[team][:players][player]
+     end
+  end
 end
 
 
