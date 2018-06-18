@@ -137,7 +137,8 @@ end
 return new_array[0]
 end
 
-
+def shoe_size(player)
+end
 
 
 
