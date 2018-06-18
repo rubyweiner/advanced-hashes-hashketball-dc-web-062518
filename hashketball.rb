@@ -175,11 +175,10 @@ def team_names
   new_array
 end
 
-def player_numbers(name_of_team)
-
+def player_numbers(team_name)
   numbers = []
   game_hash.each do |team, chars|
-    if name_of_team == game_hash[team][:team_name]
+    if team_name == game_hash[team][:team_name]
       game_hash[team][:players].each do |name, stats|
         numbers.push(stats[:number])
       end
