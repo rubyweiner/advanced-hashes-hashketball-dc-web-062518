@@ -170,8 +170,8 @@ def team_names
           if attribute == :team_name
                 new_array << values
 
-            end
           end
+      end
   end
   new_array
 end
