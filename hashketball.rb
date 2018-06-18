@@ -152,7 +152,7 @@ def shoe_size(player)
         end
     end
 end
-return new_array[0]
+return new_array[0].to_i
 end
 
 
