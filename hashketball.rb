@@ -127,7 +127,7 @@ def num_points_scored(player)
           values.each do |person, data|
             data.each do |i, j|
               if person == player && i == :points
-                new_array.push(j)
+                new_array << j
               end
             end
           end
