@@ -169,7 +169,6 @@ def team_names
       team_data.each do |attribute, values|
           if attribute == :team_name
                 new_array << values
-
           end
       end
   end
