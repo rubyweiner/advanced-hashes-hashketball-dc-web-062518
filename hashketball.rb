@@ -156,11 +156,10 @@ return new_array[0].to_i
 end
 
 def team_colors(team)
-  new_array = []
-  game_hash.each do |location, team_data|
-    team_data.each do |attribute, values|
-      values.each |person, data|
-    end
+ if team == "Charlotte Hornets"
+    game_hash[:away][:colors]
+  elsif team == "Brooklyn Nets"
+    game_hash[:home][:colors]
   end
 end
 
