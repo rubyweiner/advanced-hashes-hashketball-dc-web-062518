@@ -164,7 +164,16 @@ def team_colors(team)
 end
 
 def team_names
+ new_array = []
+  game_hash.each do |location, team_data|
+      team_data.each do |attribute, values|
+          if attribute == :team_name
+                new_array << values
 
+            end
+          end
+  end
+  new_array
 end
 
 
