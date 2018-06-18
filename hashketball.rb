@@ -120,7 +120,21 @@ end
   
 
 def num_points_scored(player)
-  game_hash[:players[player]]
+  new_array = []
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, values|
+        if attribute == :players
+          values.each do |person, data|
+            data.each do |i, j|
+              if person == player && i == :points
+                new_array.push(j)
+              end
+            end
+          end
+        end
+    end
+end
+return new_array[0]
 end
 
 
