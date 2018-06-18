@@ -164,7 +164,7 @@ def team_colors(team)
 end
 
 def team_names(name)
-  if team
+
 end
 
 
