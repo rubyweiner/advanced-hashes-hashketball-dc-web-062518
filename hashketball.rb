@@ -175,7 +175,7 @@ def team_names
   new_array
 end
 
-def players_numbers(name_of_team)
+def player_numbers(name_of_team)
 
   numbers = []
   game_hash.each do |team, chars|
